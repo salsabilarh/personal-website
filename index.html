@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
@@ -26,137 +26,125 @@
         <button class="gradient-btn">Contact Me</button>
     </header>
 
+    <!-- HOME -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, I'am <span>Salsabila Rafifah Handifa</span></h1>
+            <h1>Hi, I’m <br>Salsabila Rafifah Handifa<br></h1>
             <h3>
-                <span>Backend Developer</span>
+                <span>Backend Developer | Node.js & Golang</span>
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officia illum dolor eos, labore corporis placeat velit voluptatibus porro soluta eveniet suscipit ea modi sunt dolorum consequuntur minima ad veniam!</p>
+            <p>
+                Fresh Graduate in Computer Engineering (GPA 3.82/4.00) with strong experience in backend development and microservices architecture. Skilled in building RESTful APIs using Golang and Node.js, with solid knowledge of MySQL and MongoDB, software testing, and cloud deployment. Passionate about building secure, efficient, and reliable backend systems to support innovative digital solutions.
+            </p>
 
             <div class="social-icons">
-                <a href="#">
+                <a href="https://github.com/salsabilarh" target="_blank">
                     <i class="bx bxl-github"></i>
                 </a>
-
-                <a href="#">
+                <a href="https://www.linkedin.com/in/salsabia-rh" target="_blank">
                     <i class="bx bxl-linkedin-square"></i>
-                </a>
-
-                <a href="#">
-                    <i class="bx bxl-instagram-alt"></i>
-                </a>
-
-                <a href="#">
-                    <i class="bx bxl-twitter"></i>
                 </a>
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Hire</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
         <div class="home-img">
-            <img src="image.jpeg" alt="">
+            <img src="image.jpeg" alt="Profile Picture">
         </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="image.jpeg" alt="">
+            <img src="image2.jpg" alt="Profile Picture">
         </div>
 
         <div class="about-content">
-            <h2>About <span>Me</span></h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam sunt nesciunt ea saepe ex molestias, magnam consequatur natus ipsam voluptas nisi debitis placeat cum quae architecto iusto repellendus deserunt.</p>
-            <a href="#" class="btn">Read More</a>
+            <h2>Education</h2>
+            <h3><Span>Universitas Diponegoro - S1 Computer Engineering</Span></h3>
+            <p>GPA: 3.82/4.00 (Cum Laude)</p>
         </div>
     </section>
 
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
-
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bxl-figma"></i>
-                    <h4>UI / UX Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolor quisquam nisi atque eligendi incidunt, sequi ex voluptatem fugit maxime! Nobis impedit perferendis quam necessitatibus accusamus eligendi earum quasi eos?</p>
-                </div>
+    <!-- CERTIFICATIONS -->
+    <section class="certifications" id="certifications">
+        <h2 class="heading">Certifications</h2>
+        <div class="cert-container">
+            <div class="cert-card">
+                <i class="bx bx-certification"></i>
+                <h4>Belajar Back-End Pemula dengan JavaScript</h4>
+                <p>Dicoding Indonesia – Jun 2025</p>
             </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bxl-code"></i>
-                    <h4>Frontend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolor quisquam nisi atque eligendi incidunt, sequi ex voluptatem fugit maxime! Nobis impedit perferendis quam necessitatibus accusamus eligendi earum quasi eos?</p>
-                </div>
+            <div class="cert-card">
+                <i class="bx bx-certification"></i>
+                <h4>Belajar Dasar Pemrograman JavaScript</h4>
+                <p>Dicoding Indonesia – Jun 2025</p>
             </div>
-            
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bxl-code-curly"></i>
-                    <h4>Backend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolor quisquam nisi atque eligendi incidunt, sequi ex voluptatem fugit maxime! Nobis impedit perferendis quam necessitatibus accusamus eligendi earum quasi eos?</p>
-                </div>
+            <div class="cert-card">
+                <i class="bx bx-certification"></i>
+                <h4>Belajar Dasar Git dengan Github</h4>
+                <p>Dicoding Indonesia – Feb 2024</p>
+            </div>
+            <div class="cert-card">
+                <i class="bx bx-certification"></i>
+                <h4>Belajar Dasar SQL</h4>
+                <p>Dicoding Indonesia – Oct 2023</p>
+            </div>
+            <div class="cert-card">
+                <i class="bx bx-certification"></i>
+                <h4>Database Foundations</h4>
+                <p>Oracle Academy – Jun 2023</p>
+            </div>
+            <div class="cert-card">
+                <i class="bx bx-certification"></i>
+                <h4>Database Design</h4>
+                <p>Oracle Academy – May 2023</p>
             </div>
         </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="projects" id="projects">
         <h2 class="heading">Projects</h2>
         <div class="projects-box">
             <div class="project-card">
                 <img src="project1.png" alt="">
-
-                <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis repellat reiciendis, sequi at quisquam laborum, optio alias consectetur provident molestiae, voluptate nisi! Commodi, sapiente fugiat. Ratione labore aspernatur obcaecati nam?</p>
-                <div class="btn">Review Project</div>
+                <h3>Sistem Akses Kilat Terpadu Informasi Jasa</h3>
+                <p>Competition Project – PT Sucofindo (Jul–Aug 2025)<br>
+                Built integrated service management platform (Node.js, Express.js, MySQL, React.js) with secure authentication & admin panel.</p>
+                <div class="btn"><a href="https://github.com/salsabilarh" target="_blank">Review Project</a></div>
             </div>
 
             <div class="project-card">
                 <img src="project2.png" alt="">
-
-                <h3>Project 2</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis repellat reiciendis, sequi at quisquam laborum, optio alias consectetur provident molestiae, voluptate nisi! Commodi, sapiente fugiat. Ratione labore aspernatur obcaecati nam?</p>
-                <div class="btn">Review Project</div>
+                <h3>DarusTrack – Academic Monitoring System</h3>
+                <p>Final Project (Aug 2024 – Jun 2025)<br>
+                Backend system for academic monitoring (Node.js, MySQL) with role-based access & API performance testing (JMeter).</p>
+                <div class="btn"><a href="https://documenter.getpostman.com/view/32232306/2sAYkEpepN" target="_blank">API Docs</a></div>
             </div>
 
             <div class="project-card">
                 <img src="project3.png" alt="">
-
-                <h3>Project 3</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis repellat reiciendis, sequi at quisquam laborum, optio alias consectetur provident molestiae, voluptate nisi! Commodi, sapiente fugiat. Ratione labore aspernatur obcaecati nam?</p>
-                <div class="btn">Review Project</div>
+                <h3>Anti Money Laundering System</h3>
+                <p>Internship – PT Praisindo Teknologi (Jan–Apr 2024)<br>
+                Developed Golang + MongoDB APIs for AML workflows: confirmation (approve/reject) & Customer Risk Profile retrieval.</p>
+                <div class="btn"><a href="https://github.com/salsabilarh" target="_blank">Review Project</a></div>
             </div>
 
             <div class="project-card">
                 <img src="project4.png" alt="">
-
-                <h3>Project 4</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis repellat reiciendis, sequi at quisquam laborum, optio alias consectetur provident molestiae, voluptate nisi! Commodi, sapiente fugiat. Ratione labore aspernatur obcaecati nam?</p>
-                <div class="btn">Review Project</div>
-            </div>
-
-            <div class="project-card">
-                <img src="project5.png" alt="">
-
-                <h3>Project 5</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis repellat reiciendis, sequi at quisquam laborum, optio alias consectetur provident molestiae, voluptate nisi! Commodi, sapiente fugiat. Ratione labore aspernatur obcaecati nam?</p>
-                <div class="btn">Review Project</div>
-            </div>
-
-            <div class="project-card">
-                <img src="project6.png" alt="">
-
-                <h3>Project 6</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis repellat reiciendis, sequi at quisquam laborum, optio alias consectetur provident molestiae, voluptate nisi! Commodi, sapiente fugiat. Ratione labore aspernatur obcaecati nam?</p>
-                <div class="btn">Review Project</div>
+                <h3>Geometry Calculator App</h3>
+                <p>Personal Academic Project (2022)<br>
+                Java Swing desktop app to calculate area & perimeter of 8 geometric shapes, applying OOP principles.</p>
+                <div class="btn"><a href="https://github.com/salsabilarh" target="_blank">Review Project</a></div>
             </div>
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
@@ -179,49 +167,27 @@
         </form>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="social-icons">
-            <a href="#">
+            <a href="https://github.com/salsabilarh" target="_blank">
                 <i class="bx bxl-github"></i>
             </a>
-
-            <a href="#">
+            <a href="https://www.linkedin.com/in/salsabia-rh" target="_blank">
                 <i class="bx bxl-linkedin-square"></i>
-            </a>
-
-            <a href="#">
-                <i class="bx bxl-instagram-alt"></i>
-            </a>
-
-            <a href="#">
-                <i class="bx bxl-twitter"></i>
             </a>
         </div>
 
         <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-
-            <li>
-                <a href="#services">Services</a>
-            </li>
-            
-            <li>
-                <a href="#about">About Me</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
         <p class="copyright">
-            &copyright 2025
+            © 2025 Salsabila Rafifah Handifa. All Rights Reserved.
         </p>
     </footer>
 
