@@ -343,12 +343,12 @@ section{
 }
 
 .social-item:hover {
-  background: var(--main-color);
-  color: black;
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px var(--main-color);
 }
 
 .social-item:hover i {
-  color: black;
+  color: var(--main-color)
 }
 
 .btn-group{
