@@ -13,17 +13,16 @@
             <span>Welcome!</span>
         </a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+        <button id="menu-icon" aria-label="Open menu" class="bx bx-menu" style="background:none;border:0;"></button>
 
         <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact Me</a>
         </nav>
-
-        <button class="gradient-btn">Contact Me</button>
     </header>
 
     <!-- HOME -->
@@ -41,23 +40,22 @@
                 <a href="mailto:salsabilarafifahh@gmail.com" class="social-item">
                     <i class="bx bx-envelope"></i><span>Gmail</span>
                 </a>
-                <a href="https://www.linkedin.com/in/salsabia-rh" target="_blank" class="social-item">
-                    <i class="bx bxl-linkedin-square"></i><span>LinkedIn</span>
-                </a>
                 <a href="https://github.com/salsabilarh" target="_blank" class="social-item">
                     <i class="bx bxl-github"></i><span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/salsabia-rh" target="_blank" class="social-item">
+                    <i class="bx bxl-linkedin-square"></i><span>LinkedIn</span>
                 </a>
                 <a href="https://drive.google.com/file/d/1ir6mjJU7iZ2FKrqfpHkzQkL3RuOmAgaK/view?usp=drive_link" target="_blank" class="social-item">
                     <i class="bx bx-briefcase-alt-2"></i><span>Portfolio</span>
                 </a>
-                <a href="CV - Salsabila Rafifah Handifa.pdf" download class="social-item">
+                <a href="cv.pdf" download class="social-item">
                     <i class="bx bx-download"></i><span>Download CV</span>
                 </a>
                 </div>
 
             <div class="btn-group">
-                <!-- <a href="#contact" class="btn">Hire</a> -->
-                <a href="#contact" class="btn">Contact</a>
+                <a href="#contact" class="btn">Hire Me</a>
             </div>
         </div>
         <div class="home-img">
@@ -67,141 +65,328 @@
 
     <!-- EDUCATION -->
     <section class="education" id="education">
-        <div class="education-img">
-            <img src="image2.jpg" alt="Profile Picture">
-        </div>
+      <div class="education-img">
+          <img src="image2.jpg" alt="Profile Picture">
+      </div>
 
-        <div class="education-content">
-            <h2 class="section-title">Education</h2>
-            <h3>Universitas Diponegoro - S1 Computer Engineering</h3>
-            <p>GPA: 3.82/4.00 (Cum Laude)</p>
-        </div>
+      <div class="education-content">
+          <h2 class="section-title">Education</h2>
+          <h3><span>Universitas Diponegoro</span></h3>
+          <p class="degree">Bachelor of Computer Engineering – GPA 3.82/4.00 (Cum Laude)</p>
+      </div>
     </section>
 
-    <!-- SKILLS -->
     <section class="skills" id="skills">
-        <h2 class="section-title">My <span>Skills</span></h2>
-        <div class="skills-container">
-            <div class="skill-box">
-                <i class="bx bx-code-block"></i>
-                <h4>Programming & Backend</h4>
-                <p>Node.js, Express.js, Golang, RESTful API, Microservices</p>
-            </div>
-            <div class="skill-box">
-                <i class="bx bx-data"></i>
-                <h4>Database</h4>
-                <p>MySQL, MongoDB, SQL Query Optimization</p>
-            </div>
-            <div class="skill-box">
-                <i class="bx bx-cog"></i>
-                <h4>Tools & Testing</h4>
-                <p>Postman, JMeter, Git/GitHub, Cloud Deployment (Railway)</p>
-            </div>
-            <div class="skill-box">
-                <i class="bx bx-desktop"></i>
-                <h4>Frontend Basics</h4>
-                <p>HTML, CSS, JavaScript, React.js</p>
-            </div>
-            <div class="skill-box">
-                <i class="bx bx-user-check"></i>
-                <h4>Soft Skills</h4>
-                <p>Problem-solving, Agile Collaboration, Documentation, Fast Learner</p>
-            </div>
+      <h2 class="section-title">My <span>Skills</span></h2>
+
+      <div class="skills-grid grouped">
+        <!-- Backend & APIs -->
+        <div class="skill-card">
+          <h3>Backend & APIs</h3>
+          <div class="chips">
+            <span>Node.js</span><span>Express.js</span><span>Golang</span>
+            <span>RESTful API</span><span>RBAC</span><span>JWT</span>
+            <span>Argon2</span><span>Microservices</span>
+          </div>
         </div>
+
+        <!-- Databases -->
+        <div class="skill-card">
+          <h3>Databases</h3>
+          <div class="chips">
+            <span>MySQL</span><span>MongoDB</span><span>Database Design</span>
+            <span>SQL Basics</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <div class="chips">
+            <span>React.js</span><span>Tailwind CSS</span><span>HTML</span>
+            <span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Testing & QA -->
+        <div class="skill-card">
+          <h3>Testing & QA</h3>
+          <div class="chips">
+            <span>Postman</span><span>JMeter (load/stress/spike)</span>
+            <span>Debugging</span><span>API Documentation</span>
+          </div>
+        </div>
+
+        <!-- DevOps & Platforms -->
+        <div class="skill-card">
+          <h3>DevOps & Platforms</h3>
+          <div class="chips">
+            <span>Git/GitHub</span><span>Azure DevOps (Agile)</span>
+            <span>Railway</span><span>Vercel</span><span>Cloudinary</span>
+          </div>
+        </div>
+
+        <!-- Software Engineering -->
+        <div class="skill-card">
+          <h3>Software Engineering</h3>
+          <div class="chips">
+            <span>System Design</span><span>SDLC</span><span>Technical Docs</span>
+            <span>Java</span><span>Java Swing</span><span>OOP</span><span>NetBeans</span>
+          </div>
+        </div>
+
+        <!-- Professional & Team -->
+        <div class="skill-card">
+          <h3>Professional & Team</h3>
+          <div class="chips">
+            <span>Leadership</span><span>Teamwork</span><span>Problem Solving</span>
+            <span>Communication</span><span>Mentoring</span><span>Stakeholder Mgmt</span>
+            <span>Adaptability</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CERTIFICATIONS -->
     <section class="certifications" id="certifications">
-        <h2 class="section-title">My <span>Certifications</span></h2>
-        <div class="cert-container">
-            <div class="cert-card">
-                <i class="bx bx-certification"></i>
-                <h4>Belajar Back-End Pemula dengan JavaScript</h4>
-                <p>Dicoding Indonesia – Jun 2025</p>
-                <a href="https://www.dicoding.com/certificates/07Z6JKG8JXQR" target="_blank" class="cert-btn">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <i class="bx bx-certification"></i>
-                <h4>Belajar Dasar Pemrograman JavaScript</h4>
-                <p>Dicoding Indonesia – Jun 2025</p>
-                <a href="https://www.dicoding.com/certificates/GRX5JN9DKX0M" target="_blank" class="cert-btn">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <i class="bx bx-certification"></i>
-                <h4>Belajar Dasar Git dengan Github</h4>
-                <p>Dicoding Indonesia – Feb 2024</p>
-                <a href="https://www.dicoding.com/certificates/EYX4087MOPDL" target="_blank" class="cert-btn">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <i class="bx bx-certification"></i>
-                <h4>Belajar Dasar SQL</h4>
-                <p>Dicoding Indonesia – Oct 2023</p>
-                <a href="https://www.dicoding.com/certificates/1RXY0DDGKZVM" target="_blank" class="cert-btn">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <i class="bx bx-certification"></i>
-                <h4>HTML, CSS, JavaScript Dasar</h4>
-                <p>Skilvul – Sep 2023</p>
-                <a href="https://drive.google.com/file/d/18Ak7NqdDNP9PZ-hhnzzWTJZ1T3fDdfn2/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <i class="bx bx-certification"></i>
-                <h4>Web Development Pemula</h4>
-                <p>Skilvul – Sep 2023</p>
-                <a href="https://drive.google.com/file/d/1UoOBKXARbrM28C-yj9af7SPEgceaQORZ/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <i class="bx bx-certification"></i>
-                <h4>Database Foundations</h4>
-                <p>Oracle Academy – Jun 2023</p>
-                <a href="https://drive.google.com/file/d/1Rs1_L2-n9YK1JcTJpY72e4P2CLvRVgk-/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <i class="bx bx-certification"></i>
-                <h4>Database Design</h4>
-                <p>Oracle Academy – May 2023</p>
-                <a href="https://drive.google.com/file/d/15M958AHKUVR6SDZos6pssurJVnWCkwS3/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
-            </div>
+      <h2 class="section-title">My <span>Certifications</span></h2>
+
+      <div class="cert-grid">
+
+        <!-- Backend Development -->
+        <div class="cert-column">
+          <h3 class="cert-category">Backend Development</h3>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>Belajar Back-End Pemula dengan JavaScript</h4>
+            <p>Dicoding – Jun 2025</p>
+            <a href="https://www.dicoding.com/certificates/07Z6JKG8JXQR" target="_blank" class="cert-btn">View</a>
+          </div>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>Belajar Dasar Pemrograman JavaScript</h4>
+            <p>Dicoding – Jun 2025</p>
+            <a href="https://www.dicoding.com/certificates/GRX5JN9DKX0M" target="_blank" class="cert-btn">View</a>
+          </div>
         </div>
+
+        <!-- Database Management -->
+        <div class="cert-column">
+          <h3 class="cert-category">Database Management</h3>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>Database Foundations</h4>
+            <p>Oracle Academy – Jun 2023</p>
+            <a href="https://drive.google.com/file/d/1Rs1_L2-n9YK1JcTJpY72e4P2CLvRVgk-/view" target="_blank" class="cert-btn">View</a>
+          </div>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>Database Design</h4>
+            <p>Oracle Academy – May 2023</p>
+            <a href="https://drive.google.com/file/d/15M958AHKUVR6SDZos6pssurJVnWCkwS3/view" target="_blank" class="cert-btn">View</a>
+          </div>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>Belajar Dasar SQL</h4>
+            <p>Dicoding – Oct 2023</p>
+            <a href="https://www.dicoding.com/certificates/1RXY0DDGKZVM" target="_blank" class="cert-btn">View</a>
+          </div>
+        </div>
+
+        <!-- Frontend Basics -->
+        <div class="cert-column">
+          <h3 class="cert-category">Frontend Basics</h3>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>HTML Dasar</h4>
+            <p>Skilvul – Sep 2023</p>
+            <a href="https://drive.google.com/file/d/18Ak7NqdDNP9PZ-hhnzzWTJZ1T3fDdfn2/view" target="_blank" class="cert-btn">View</a>
+          </div>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>CSS Dasar</h4>
+            <p>Skilvul – Sep 2023</p>
+            <a href="https://drive.google.com/file/d/1rY9-AICjxDjWM-2s35pdzi98swwqBKna/view" target="_blank" class="cert-btn">View</a>
+          </div>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>JavaScript Dasar</h4>
+            <p>Skilvul – Sep 2023</p>
+            <a href="https://drive.google.com/file/d/1UoOBKXARbrM28C-yj9af7SPEgceaQORZ/view" target="_blank" class="cert-btn">View</a>
+          </div>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>Web Development Pemula</h4>
+            <p>Skilvul – Sep 2023</p>
+            <a href="https://drive.google.com/file/d/1UoOBKXARbrM28C-yj9af7SPEgceaQORZ/view" target="_blank" class="cert-btn">View</a>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="cert-column">
+          <h3 class="cert-category">Tools & Version Control</h3>
+          <div class="cert-card">
+            <i class="bx bx-certification"></i>
+            <h4>Belajar Dasar Git dengan GitHub</h4>
+            <p>Dicoding – Feb 2024</p>
+            <a href="https://www.dicoding.com/certificates/EYX4087MOPDL" target="_blank" class="cert-btn">View</a>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- PROJECTS -->
     <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
-        <div class="projects-box">
-            <div class="project-card">
-                <img src="project1.png" alt="">
-                <h3>Sistem Akses Kilat Terpadu Informasi Jasa</h3>
-                <p>Competition Project – PT Sucofindo (Jul–Aug 2025)<br>
-                Built integrated service management platform (Node.js, Express.js, MySQL, React.js) with secure authentication & admin panel.</p>
-                <div class="btn"><a href="https://github.com/salsabilarh" target="_blank">Review Project</a></div>
-            </div>
+      <h2 class="heading">Projects</h2>
 
-            <div class="project-card">
-                <img src="project2.png" alt="">
-                <h3>DarusTrack – Academic Monitoring System</h3>
-                <p>Final Project (Aug 2024 – Jun 2025)<br>
-                Backend system for academic monitoring (Node.js, MySQL) with role-based access & API performance testing (JMeter).</p>
-                <div class="btn"><a href="https://documenter.getpostman.com/view/32232306/2sAYkEpepN" target="_blank">API Docs</a></div>
-            </div>
+      <!-- Tabs -->
+        <div class="tabs" role="tablist" aria-label="Project roles">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-backend" id="tab-backend" data-role="backend">Backend</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-fullstack" id="tab-fullstack" data-role="fullstack">Fullstack</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-developer" id="tab-developer" data-role="developer">Developer</button>
+        </div>
 
-            <div class="project-card">
-                <img src="project3.png" alt="">
-                <h3>Anti Money Laundering System</h3>
-                <p>Internship – PT Praisindo Teknologi (Jan–Apr 2024)<br>
-                Developed Golang + MongoDB APIs for AML workflows: confirmation (approve/reject) & Customer Risk Profile retrieval.</p>
-                <div class="btn"><a href="https://github.com/salsabilarh" target="_blank">Review Project</a></div>
+        <!-- Projects Grid -->
+        <div class="projects-box" id="projects-grid">
+          <!-- Project 1 (Fullstack) -->
+          <div class="project-card" data-role="fullstack" role="tabpanel" aria-labelledby="tab-fullstack" id="panel-fullstack">
+            <img src="project1.png" alt="Sistem Akses Kilat Terpadu Informasi Jasa preview" />
+            <h3>Sistem Akses Kilat Terpadu Informasi Jasa</h3>
+            <p><span>Competition Project – PT Sucofindo (Jul–Aug 2025)</span><br>
+              Developed an integrated service information system to unify data across multiple company units, designed for an innovation competition submission. The system enables centralized service management, revenue tracking, and marketing documentation with secure role-based access.
+            </p>
+            <div class="tech-icons">
+              <span><i class="bx bxl-nodejs"></i> Node.js</span>
+              <span><i class="bx bx-code-alt"></i> Express.js</span>
+              <span><i class="bx bxl-mysql"></i> MySQL</span>
+              <span><i class="bx bxl-react"></i> React.js</span>
+              <span><i class="bx bx-cloud"></i> Railway</span>
+              <span><i class="bx bx-cloud-upload"></i> Cloudinary</span>
+              <span><i class="bx bx-code-block"></i> Vercel</span>
             </div>
+            <button class="btn" onclick="openModal('project1')">View Detail</button>
+          </div>
 
-            <div class="project-card">
-                <img src="project4.png" alt="">
-                <h3>Geometry Calculator App</h3>
-                <p>Personal Academic Project (2022)<br>
-                Java Swing desktop app to calculate area & perimeter of 8 geometric shapes, applying OOP principles.</p>
-                <div class="btn"><a href="https://github.com/salsabilarh" target="_blank">Review Project</a></div>
+          <!-- Project 2 (Backend) -->
+          <div class="project-card" data-role="backend" role="tabpanel" aria-labelledby="tab-backend" id="panel-backend">
+            <img src="project2.png" alt="DarusTrack Academic Monitoring preview" />
+            <h3>DarusTrack – Academic Monitoring System</h3>
+            <p><span>Final Project – Diponegoro University (Aug 2024 – Jun 2025)</span><br>
+              Built a backend system for an academic monitoring platform with role-based access for administrators, teachers, parents, and principals. The system supports curriculum management, scheduling, and student data integration.
+            </p>
+            <div class="tech-icons">
+              <span><i class="bx bxl-nodejs"></i> Node.js</span>
+              <span><i class="bx bx-code-alt"></i> Express.js</span>
+              <span><i class="bx bxl-mysql"></i> MySQL</span>
+              <span><i class="bx bx-cloud"></i> Railway</span>
+              <span><i class="bx bx-test-tube"></i> JMeter</span>
             </div>
+            <button class="btn" onclick="openModal('project2')">View Detail</button>
+          </div>
+
+          <!-- Project 3 (Backend) -->
+          <div class="project-card" data-role="backend" role="tabpanel" aria-labelledby="tab-backend">
+            <img src="project3.png" alt="Anti Money Laundering System preview" />
+            <h3>Anti Money Laundering System</h3>
+            <p><span>Internship – PT Praisindo Teknologi (Jan–Apr 2024)</span><br>
+              Developed backend services for an Anti-Money Laundering (AML) system to support financial compliance operations. Focused on implementing secure API endpoints for AML watchlist confirmation (approval/rejection with remarks) and detailed Customer Risk Profile retrieval, enabling real-time risk assessment for compliance officers
+            </p>
+            <div class="tech-icons">
+              <span><i class="bx bx-code-block"></i> Golang</span>
+              <span><i class="bx bxl-mongodb"></i> MongoDB</span>
+              <span><i class="bx bx-task"></i> Agile</span>
+              <span><i class="bx bx-cloud"></i> Azure DevOps</span>
+            </div>
+            <button class="btn" onclick="openModal('project3')">View Detail</button>
+          </div>
+
+          <!-- Project 4 (Developer) -->
+          <div class="project-card" data-role="developer" role="tabpanel" aria-labelledby="tab-developer">
+            <img src="project4.png" alt="Geometry Calculator App preview" />
+            <h3>Geometry Calculator App</h3>
+            <p><span>Personal Academic Project (2022)</span><br>
+              Developed a desktop application for calculating the area and perimeter of 8 two-dimensional geometric shapes. Designed with an intuitive Java Swing interface and implemented using OOP principles for modularity and maintainability.
+            </p>
+            <div class="tech-icons">
+              <span><i class="bx bxl-java"></i> Java</span>
+              <span><i class="bx bx-desktop"></i> Swing</span>
+              <span><i class="bx bx-code-alt"></i> NetBeans</span>
+              <span><i class="bx bx-layer"></i> OOP</span>
+            </div>
+            <button class="btn" onclick="openModal('project4')">View Detail</button>
+          </div>
         </div>
     </section>
+
+    <!-- ==== MODALS ==== -->
+    <!-- Modal Project 1 -->
+      <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>Sistem Akses Kilat Terpadu Informasi Jasa</h2>
+            <p><strong>Overview:</strong> Developed an integrated service information system to unify data across company units for innovation competition.</p>
+            <p><strong>Duration & Location:</strong> Jul – Aug 2025, Semarang</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+            <li>Service Management (CRUD services)</li>
+            <li>Revenue Tracking</li>
+            <li>Marketing Kit Management</li>
+            <li>Admin Panel (User Approvals, Unit Change Requests, Logs)</li>
+            </ul>
+            <p><strong>Technologies & Tools:</strong> Node.js, Express.js, MySQL, React.js, Vercel, Railway, Cloudinary</p>
+            <p><strong>Key Contributions:</strong></p>
+            <ul>
+            <li>Requirement analysis & flow design</li>
+            <li>Database schema + RESTful APIs with RBAC</li>
+            <li>React.js frontend with JWT auth</li>
+            <li>API documentation & full-stack implementation</li>
+            </ul>
+            <a href="https://github.com/salsabilarh" target="_blank" class="btn">View GitHub</a>
+        </div>
+        </div>
+
+        <!-- Modal Project 2 -->
+        <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2>DarusTrack – Academic Monitoring System</h2>
+            <p><strong>Overview:</strong> Backend system for academic monitoring with role-based access and curriculum management.</p>
+            <p><strong>Duration & Location:</strong> Aug 2024 – Jun 2025, Semarang</p>
+            <p><strong>Features:</strong> User, Academic Year, Schedule, Student & Curriculum Management</p>
+            <p><strong>Technologies & Tools:</strong> Node.js, Express.js, MySQL, Railway</p>
+            <p><strong>Key Contributions:</strong> API design, docs, performance testing with JMeter, deployment.</p>
+            <a href="https://documenter.getpostman.com/view/32232306/2sAYkEpepN" target="_blank" class="btn">API Docs</a>
+        </div>
+        </div>
+
+        <!-- Modal Project 3 -->
+        <div id="project3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h2>Anti Money Laundering System</h2>
+            <p><strong>Overview:</strong> Developed backend APIs for AML workflows & Customer Risk Profile retrieval.</p>
+            <p><strong>Duration & Location:</strong> Jan – Apr 2024, Jakarta Selatan</p>
+            <p><strong>Features:</strong> AML Watchlist Confirmation, Customer Risk Profile, Approval Workflow</p>
+            <p><strong>Technologies & Tools:</strong> Golang (microservices), MongoDB, Azure DevOps, Agile</p>
+            <p><strong>Key Contributions:</strong> Implemented APIs, wrote documentation, Agile collaboration.</p>
+            <a href="https://github.com/salsabilarh" target="_blank" class="btn">View GitHub</a>
+        </div>
+        </div>
+
+        <!-- Modal Project 4 -->
+        <div id="project4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project4')">&times;</span>
+            <h2>Geometry Calculator App</h2>
+            <p><strong>Overview:</strong> Java Swing desktop app for calculating area & perimeter of 8 shapes.</p>
+            <p><strong>Duration & Location:</strong> May – Jun 2022, Semarang</p>
+            <p><strong>Features:</strong> Interactive menu, formula hints, instant calculation, reset/back controls</p>
+            <p><strong>Technologies & Tools:</strong> Java, Swing, NetBeans, OOP</p>
+            <p><strong>Key Contributions:</strong> OOP design, UI development, validation & calculations.</p>
+            <a href="https://github.com/salsabilarh" target="_blank" class="btn">View GitHub</a>
+        </div>
+        </div>
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
@@ -228,31 +413,23 @@
 
    <!-- FOOTER -->
     <footer class="footer">
-        <div class="social-links">
+        <div class="social-links footer-social">
             <a href="mailto:salsabilarafifahh@gmail.com" class="social-item">
-            <i class="bx bx-envelope"></i><span>Gmail</span>
-            </a>
-            <a href="https://www.linkedin.com/in/salsabia-rh" target="_blank" class="social-item">
-            <i class="bx bxl-linkedin-square"></i><span>LinkedIn</span>
+                <i class="bx bx-envelope"></i><span>Gmail</span>
             </a>
             <a href="https://github.com/salsabilarh" target="_blank" class="social-item">
-            <i class="bx bxl-github"></i><span>GitHub</span>
+                <i class="bx bxl-github"></i><span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/salsabia-rh" target="_blank" class="social-item">
+                <i class="bx bxl-linkedin-square"></i><span>LinkedIn</span>
             </a>
             <a href="https://drive.google.com/file/d/1ir6mjJU7iZ2FKrqfpHkzQkL3RuOmAgaK/view?usp=drive_link" target="_blank" class="social-item">
-            <i class="bx bx-briefcase-alt-2"></i><span>Portfolio</span>
+                <i class="bx bx-briefcase-alt-2"></i><span>Portfolio</span>
             </a>
             <a href="cv.pdf" download class="social-item">
-            <i class="bx bx-download"></i><span>Download CV</span>
+                <i class="bx bx-download"></i><span>Download CV</span>
             </a>
         </div>
-
-        <ul class="list">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
 
         <p class="copyright">
             © 2025 Salsabila Rafifah Handifa. All Rights Reserved.

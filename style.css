@@ -121,103 +121,155 @@ section{
     color: transparent;
 }
 
-/* === Skills Section === */
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 3rem;
-    margin-top: 4rem;
+/* === Skills (responsive grouped) === */
+.skills-grid.grouped {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.skill-box {
-    background: linear-gradient(145deg, #111, #0a0a0a);
-    border: 2px solid var(--main-color);
-    border-radius: 2rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 15px rgba(234, 88, 12, 0.4);
+.skill-card {
+  background: #0a0a0a;
+  border: 2px solid var(--main-color);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: auto;  /* mengikuti isi */
+  box-shadow: 0 0 12px rgba(234, 88, 12, 0.3);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
-.skill-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px var(--main-color), 0 0 40px rgba(234, 88, 12, 0.7);
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px var(--main-color);
 }
 
-.skill-box i {
-    font-size: 4rem;
-    color: var(--main-color);
-    margin-bottom: 1rem;
+.skill-card h3 {
+  font-size: clamp(1.6rem, 1.2rem + 0.6vw, 2rem);
+  color: var(--main-color);
+  margin: 0 0 .5rem 0;
+  line-height: 1.2;
+  text-align: left;
 }
 
-.skill-box h4 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--main-color);
+/* Chip list */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
 }
 
-.skill-box p {
-    font-size: 1.5rem;
-    color: #ddd;
+.chips span {
+  display: inline-block;
+  padding: .6rem 1rem;
+  border: 1px solid var(--main-color);
+  border-radius: 999px;
+  background: #111;
+  font-size: clamp(1.2rem, 1rem + 0.3vw, 1.4rem);
+  color: #fff;
+  white-space: nowrap;
 }
 
-/* === Certifications Section === */
-.cert-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3rem;
-    margin-top: 4rem;
+.chips span:hover {
+  background: var(--main-color);
+  color: #000;
+}
+
+/* Section title tweak on small screens */
+.section-title {
+  font-size: clamp(3rem, 2rem + 2.5vw, 5rem);
+  margin-bottom: 2rem;
+}
+
+/* Compact padding for mobile */
+@media (max-width: 768px) {
+  section#skills {
+    padding: 8rem 8%;
+  }
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.cert-column {
+  background: #0a0a0a;
+  border: 2px solid var(--main-color);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(234, 88, 12, 0.3);
+  transition: 0.3s ease;
+}
+
+.cert-column:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.cert-category {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid var(--main-color);
+  padding-bottom: 0.5rem;
 }
 
 .cert-card {
-    background: linear-gradient(145deg, #111, #0a0a0a);
-    border: 2px solid var(--main-color);
-    border-radius: 2rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 15px rgba(234, 88, 12, 0.4);
+  background: linear-gradient(145deg, #111, #0a0a0a);
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
 }
 
 .cert-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px var(--main-color), 0 0 40px rgba(234, 88, 12, 0.7);
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px var(--main-color);
 }
 
 .cert-card i {
-    font-size: 5rem;
-    color: var(--main-color);
-    margin-bottom: 1.5rem;
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 0.8rem;
 }
 
 .cert-card h4 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
 }
 
 .cert-card p {
-    font-size: 1.4rem;
-    color: #ccc;
-    margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
 }
 
 .cert-btn {
-    display: inline-block;
-    padding: 0.8rem 1.6rem;
-    background: var(--main-color);
-    color: black;
-    font-size: 1.4rem;
-    font-weight: 600;
-    border-radius: 2rem;
-    transition: 0.3s ease;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: var(--main-color);
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
 .cert-btn:hover {
-    background: black;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    box-shadow: 0 0 15px var(--main-color);
+  background: black;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
 }
 
 .home{
@@ -247,7 +299,7 @@ section{
 }
 
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.8;
 }
@@ -265,7 +317,6 @@ section{
                 0 0 100px var(--main-color);
 }
 
-/* Style untuk icon + text */
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -292,9 +343,12 @@ section{
 }
 
 .social-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+  background: var(--main-color);
+  color: black;
+}
+
+.social-item:hover i {
+  color: black;
 }
 
 .btn-group{
@@ -400,6 +454,78 @@ section{
     margin: 5rem 0;
 }
 
+/* Modal Base */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.7);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #111;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 70%;
+  color: white;
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+.modal-content p {
+    font-size: medium;
+}
+
+.modal-content h2 {
+    font-size: 35px;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  margin-left: 20px;
+  list-style: disc;
+  font-size: medium;
+}
+
+.modal-content .btn {
+  margin-top: 15px;
+  display: inline-block;
+  background: var(--main-color);
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.modal-content .btn:hover {
+  background: black;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close:hover {
+  color: var(--main-color);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 .services{
     background-color: var(--bg-color);
     color: black;
@@ -464,6 +590,21 @@ section{
     background-color: var(--second-bg-color);
 }
 
+/* Mode single-card: pusatkan dan batasi lebar kartu */
+.projects-box.single {
+  grid-template-columns: 1fr;      /* satu kolom */
+  justify-items: center;            /* center isi grid */
+}
+
+.projects-box.single .project-card {
+  width: min(100%, 540px);          /* batasi lebar max */
+}
+
+/* kurangi min card width agar fleksibel di tablet */
+.projects-box {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .projects-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -498,32 +639,107 @@ section{
 }
 
 .project-card h3{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
     color: var(--text-color);
 }
 
 .project-card p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: var(--text-color);
 }
 
-.project-card .btn{
-    margin-top: 1.5rem;
-    background-color: var(--main-color);
-    color: black;
-    font-weight: 600;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+.project-card .btn {
+  margin-top: 1.5rem;
+  background-color: var(--main-color);
+  color: black;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: none;
 }
 
-.project-card .btn:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+.project-card .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 0 2rem 0;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: .8rem 1.6rem;
+  font-size: 1.4rem;
+  border: 1px solid var(--main-color);
+  border-radius: 999px;
+  background: #121212;
+  color: #fff;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.tab-btn:hover { transform: translateY(-2px); box-shadow: 0 0 12px rgba(234,88,12,.4); }
+.tab-btn.active, .tab-btn[aria-selected="true"] {
+  background: var(--main-color);
+  color: #000;
+  box-shadow: 0 0 16px var(--main-color);
+}
+
+/* Sembunyikan panel yang tidak aktif (pakai data-visible toggling) */
+.projects-box .project-card { display: none; }
+.projects-box .project-card[data-visible="true"] { display: flex; }
+
+/* Responsif: grid tetap sama */
+.projects-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0 20px 0;
+}
+
+.tech-icons span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #1a1a1a;
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 1.3rem;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.tech-icons span i {
+  font-size: 1.6rem;
+  color: var(--main-color);
+}
+
+.tech-icons span:hover {
+  background: var(--main-color);
+  color: black;
+}
+
+.tech-icons span:hover i {
+  color: black;
 }
 
 .contact{
@@ -562,8 +778,13 @@ section{
     padding: 50px 0;
 }
 
-.footer .social-icons{
-    text-align: center;
+.footer-social {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer .social-item {
+  font-size: 1.4rem;
 }
 
 .footer ul{
@@ -592,69 +813,76 @@ section{
     font-size: 16px;
 }
 
-@media(max-width:1285px){
-    #menu-icon{
-        display: block;
-    }
+@media (max-width:1285px){
+  #menu-icon{
+    display: block;
+    cursor: pointer;               /* kursor klik */
+  }
 
-    .navbar{
-        position: absolute;
-        top:100%;
-        right: 0;
-        width: 50%;
-        padding: 1rem 3rem;
-        background: rgba(0, 0, 0, 0.8);
-        border-bottom-left-radius: 3rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        display: none;
-    }
+  .navbar{
+    position: absolute;
+    top:100%;
+    right: 0;
+    width: 30%;
+    padding: 1rem 3rem;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom-left-radius: 3rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;                 /* tersembunyi */
+    z-index: 1001;                 /*di atas konten lain */
+  }
 
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: var(--text-color);
-    }
+  .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 1.6rem 0;
+    color: var(--text-color);
+  }
 
-    .navbar active{
-        display: block;
-    }
+  .navbar.active{
+    display: block;
+  }
 
-    .gradient-btn{
-        display: none;
-    }
+  .gradient-btn{
+    display: none;
+  }
 
-    .home{
-        flex-direction: column-reverse;
-        margin: 5rem 0;
-        gap: 5rem;
-    }
+  .home{
+    flex-direction: column-reverse;
+    margin: 5rem 0;
+    gap: 5rem;
+  }
 
-    .home-content{
-        align-items: center;
-        text-align: center;
-    }
+  .home-content{
+    align-items: center;
+    text-align: center;
+  }
 
-    .home-img img{
-        width: 56vw;
-    }
+  .home-img img{
+    width: 56vw;
+  }
 
-    .education{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
+  .education{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 
-    .education h2{
-        text-align: center;
-        margin: 2rem 0;
-    }
+  .education h2{
+    text-align: center;
+    margin: 2rem 0;
+  }
 
-    .education img{
-        width: 52vw;
-    }
+  .education img{
+    width: 52vw;
+  }
 
-    .contact form{
-        flex-direction: column;
-    }    
+  .social-links{
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .contact form{
+    flex-direction: column;
+  }
 }
