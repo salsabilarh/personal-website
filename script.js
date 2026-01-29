@@ -1,119 +1,176 @@
 (() => {
-  const ready = (fn) => {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', fn);
-    } else {
-      fn();
-    }
-  };
+    const ready = (fn) => {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
+        }
+    };
 
-  ready(() => {
-    // === Navbar toggle
-    const menuIcon = document.querySelector('#menu-icon');
-    const navbar = document.querySelector('.navbar');
+    ready(() => {
+        // === Mobile Navbar Toggle ===
+        const menuIcon = document.querySelector('#menu-icon');
+        const navbar = document.querySelector('.navbar');
 
-    if (menuIcon && navbar) {
-      menuIcon.addEventListener('click', () => {
-        const isOpen = navbar.classList.toggle('active');
+        if (menuIcon && navbar) {
+            menuIcon.addEventListener('click', () => {
+                // Toggle active class
+                navbar.classList.toggle('active');
+                
+                // Animate menu icon
+                menuIcon.classList.toggle('bx-x');
+                menuIcon.classList.toggle('bx-menu');
+                
+                // Prevent body scroll when menu is open
+                document.body.style.overflow = navbar.classList.contains('active') ? 'hidden' : '';
+            });
 
-        // ubah ikon menu ↔ close
-        menuIcon.classList.toggle('bx-x', isOpen);
-        menuIcon.classList.toggle('bx-menu', !isOpen);
-      });
+            // Close menu when clicking on a link
+            navbar.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navbar.classList.remove('active');
+                    menuIcon.classList.remove('bx-x');
+                    menuIcon.classList.add('bx-menu');
+                    document.body.style.overflow = '';
+                });
+            });
 
-      // tutup menu saat klik link
-      navbar.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-          navbar.classList.remove('active');
-          menuIcon.classList.remove('bx-x');
-          menuIcon.classList.add('bx-menu');
+            // Close menu when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
+                    navbar.classList.remove('active');
+                    menuIcon.classList.remove('bx-x');
+                    menuIcon.classList.add('bx-menu');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // === Modal Functions ===
+        window.openModal = (id) => {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        };
+
+        window.closeModal = (id) => {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        };
+
+        // Close modal when clicking outside
+        document.addEventListener('click', (event) => {
+            document.querySelectorAll('.modal').forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
         });
-      });
-    }
 
-    // === Modal helpers (open/close)
-    // Tetap global kalau dipanggil via onclick di HTML:
-    window.openModal = (id) => {
-      const el = document.getElementById(id);
-      if (el) el.style.display = 'block';
-    };
-    window.closeModal = (id) => {
-      const el = document.getElementById(id);
-      if (el) el.style.display = 'none';
-    };
+        // Close modal with Escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.modal').forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        });
 
-    // Close modal saat klik overlay
-    window.addEventListener('click', (event) => {
-      document.querySelectorAll('.modal').forEach((modal) => {
-        if (event.target === modal) modal.style.display = 'none';
-      });
+        // === Smooth Scrolling for Anchor Links ===
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // === Active Nav Link on Scroll ===
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        function updateActiveNavLink() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        // === Sticky Header ===
+        const header = document.querySelector('.header');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.style.padding = '1rem 5%';
+                header.style.background = 'rgba(202, 59, 26, 0.98)';
+            } else {
+                header.style.padding = '2rem 5%';
+                header.style.background = 'rgba(202, 59, 26, 0.95)';
+            }
+            
+            // Hide/show header on scroll
+            if (scrollTop > lastScrollTop && scrollTop > 200) {
+                // Scroll down
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll up
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        // === Animate elements on scroll ===
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements to animate
+        document.querySelectorAll('.skill-card, .project-card, .experience-item, .cert-column').forEach(el => {
+            observer.observe(el);
+        });
     });
-
-    // Tabs Filtering (Projects)
-    const tabs = document.querySelectorAll('.tab-btn');
-    const cards = document.querySelectorAll('#projects-grid .project-card');
-
-    function showRole(role) {
-  const grid = document.getElementById('projects-grid');
-  let visibleCount = 0;
-
-  cards.forEach((card) => {
-    const match = card.getAttribute('data-role') === role;
-    card.setAttribute('data-visible', match ? 'true' : 'false');
-    if (match) visibleCount++;
-  });
-
-  // Aktifkan mode "single" jika hanya 1 kartu yang terlihat
-  if (grid) {
-    grid.classList.toggle('single', visibleCount === 1);
-  }
-}
-
-    function setActiveTab(btn) {
-      tabs.forEach((b) => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-    }
-
-    function initTabs(defaultRole = 'backend') {
-      if (!tabs.length || !cards.length) return; // halaman tanpa tabs
-      // Default role
-      setActiveTab([...tabs].find((b) => b.dataset.role === defaultRole) || tabs[0]);
-      showRole(defaultRole);
-      // Sinkronisasi panel awal
-      cards.forEach((c) => {
-        const isVisible = c.getAttribute('data-role') === defaultRole;
-        c.setAttribute('data-visible', isVisible ? 'true' : 'false');
-      });
-
-      // Event listeners
-      tabs.forEach((btn, idx) => {
-        btn.addEventListener('click', () => {
-          setActiveTab(btn);
-          showRole(btn.dataset.role);
-        });
-
-        // Aksesibilitas keyboard
-        btn.addEventListener('keydown', (e) => {
-          const key = e.key;
-          let targetIndex = idx;
-          if (key === 'ArrowRight') targetIndex = (idx + 1) % tabs.length;
-          if (key === 'ArrowLeft')  targetIndex = (idx - 1 + tabs.length) % tabs.length;
-          if (key === 'Home')       targetIndex = 0;
-          if (key === 'End')        targetIndex = tabs.length - 1;
-          if (targetIndex !== idx) {
-            e.preventDefault();
-            tabs[targetIndex].focus();
-            tabs[targetIndex].click();
-          }
-        });
-      });
-    }
-
-    // Default backend
-    initTabs('backend');
-  });
 })();
