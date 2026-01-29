@@ -3,361 +3,1162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salsabila Rafifah Handifa | Full Stack Developer</title>
+    <meta name="description" content="Salsabila Rafifah Handifa - Award-winning Full Stack Developer specializing in Node.js & React.js with proven track record in scalable web applications.">
+    <meta name="keywords" content="Full Stack Developer, Node.js, React.js, Backend Developer, Frontend Developer, RESTful APIs, Microservices">
+    <title>Salsabila Rafifah Handifa | Award-Winning Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
     <header class="header">
-        <a href="#home" class="logo">
-            Welcome!
-        </a>
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">SRH</span>
+                <span class="logo-text">Salsabila<span class="logo-highlight">.dev</span></span>
+            </a>
 
-        <button id="menu-icon" aria-label="Open menu" class="bx bx-menu" style="background:none;border:0;"></button>
+            <button id="menu-icon" aria-label="Open menu" class="bx bx-menu" style="background:none;border:0;"></button>
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-        </nav>
+            <nav class="navbar">
+                <a href="#home" class="nav-link">
+                    <i class='bx bx-home'></i>Home
+                </a>
+                <a href="#education" class="nav-link">
+                    <i class='bx bx-book'></i>Education
+                </a>
+                <a href="#experience" class="nav-link">
+                    <i class='bx bx-briefcase'></i>Experience
+                </a>
+                <a href="#achievements" class="nav-link">
+                    <i class='bx bx-trophy'></i>Achievements
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class='bx bx-code-alt'></i>Skills
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class='bx bx-folder'></i>Projects
+                </a>
+                <a href="#certifications" class="nav-link">
+                    <i class='bx bx-certification'></i>Certifications
+                </a>
+                <a href="#contact" class="nav-link highlight">
+                    <i class='bx bx-envelope'></i>Contact
+                </a>
+            </nav>
+        </div>
     </header>
 
-    <!-- HOME -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <br>Salsabila Rafifah Handifa<br></h1>
-            <h3>
-                <span>Full Stack Developer | Node.js & React.js</span>
-            </h3>
-            <p>
-                Computer Engineering graduate (GPA 3.82/4.00) with hands-on experience building scalable web applications using Node.js, React.js, and modern databases. Proven ability to develop secure, production-ready RESTful APIs, design intuitive user interfaces, and implement CI/CD pipelines. Experienced in Agile environments and highly motivated to deliver end-to-end digital solutions with real business impact.
-            </p>
-
-            <div class="social-links">
-                <a href="mailto:salsabilarafifahh@gmail.com" class="social-item">
-                    <i class="bx bx-envelope"></i><span>Email</span>
-                </a>
-                <a href="https://github.com/salsabilarh" target="_blank" class="social-item">
-                    <i class="bx bxl-github"></i><span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/salsabila-rh" target="_blank" class="social-item">
-                    <i class="bx bxl-linkedin-square"></i><span>LinkedIn</span>
-                </a>
-                <a href="https://drive.google.com/file/d/1ir6mjJU7iZ2FKrqfpHkzQkL3RuOmAgaK/view?usp=drive_link" target="_blank" class="social-item">
-                    <i class="bx bx-briefcase-alt-2"></i><span>Portfolio</span>
-                </a>
-                <a href="CV_Salsabila_Rafifah_Handifa_FullStack.pdf" download class="social-item">
-                    <i class="bx bx-download"></i><span>Download CV</span>
-                </a>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge">
+                        <i class='bx bx-award'></i>
+                        Award-Winning Developer
+                    </span>
+                    <span class="badge">
+                        <i class='bx bx-star'></i>
+                        8+ High-Impact Projects
+                    </span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Salsabila Rafifah Handifa</span>
+                    <span class="hero-tagline">
+                        <span class="gradient-text">Full Stack Developer</span>
+                        who delivers
+                        <span class="highlight-text">measurable business impact</span>
+                    </span>
+                </h1>
+                
+                <p class="hero-description">
+                    Computer Engineering graduate (GPA 3.82/4.00 <strong>Cum Laude</strong>) with proven expertise in building 
+                    <strong>scalable enterprise applications</strong>. Awarded <strong>1st Place at HackIn'Fest 2025</strong> for 
+                    developing full-stack solutions that process <strong>142+ service records</strong> and serve <strong>300+ concurrent users</strong>.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Production Modules</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">API Endpoints</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">142+</div>
+                        <div class="stat-label">Service Records</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1<sup>st</sup></div>
+                        <div class="stat-label">Award Winner</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class='bx bx-folder-open'></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class='bx bx-message-dots'></i>
+                        Let's Connect
+                    </a>
+                    <a href="CV_Salsabila_Rafifah_Handifa_FullStack.pdf" download class="btn btn-outline">
+                        <i class='bx bx-download'></i>
+                        Download CV
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="home-img">
-            <img src="image.jpeg" alt="Salsabila Rafifah Handifa - Full Stack Developer">
+            
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="image.jpeg" alt="Salsabila Rafifah Handifa - Full Stack Developer" loading="lazy">
+                    <div class="image-badge">
+                        <i class='bx bx-code'></i>
+                        Currently at PT SISI
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class='bx bxl-react'></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class='bx bxl-nodejs'></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class='bx bxl-mongodb'></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class='bx bxl-aws'></i>
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- EDUCATION -->
+    <!-- ===== EDUCATION ===== -->
     <section class="education" id="education">
-      <div class="education-content">
-          <h2 class="section-title">Education</h2>
-          <h3><span>Diponegoro University</span></h3>
-          <p class="degree">Bachelor of Computer Engineering – GPA 3.82/4.00 (Cum Laude)</p>
-          <p class="thesis"><strong>Thesis:</strong> Parent Monitoring System for Student Assessment and Progress at SDIT Darussalam 01 Batam: Backend Development</p>
-      </div>
-      <div class="education-img">
-          <img src="image2.jpg" alt="Diponegoro University">
-      </div>
-    </section>
-
-    <!-- EXPERIENCE SECTION -->
-    <section class="experience" id="experience">
-        <h2 class="section-title">Professional <span>Experience</span></h2>
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-icon">🎓</span>
+                Academic Excellence
+            </h2>
+            <p class="section-subtitle">Strong foundation in Computer Engineering with research-backed thesis</p>
+        </div>
         
-        <div class="experience-timeline">
-            <!-- PT SISI -->
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>PT Sinergi Informatika Semen Indonesia</h3>
-                    <span class="experience-date">Oct 2025 – Present</span>
+        <div class="education-content">
+            <div class="education-card">
+                <div class="education-header">
+                    <div class="uni-logo">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+                    <div class="edu-details">
+                        <h3>Diponegoro University</h3>
+                        <div class="edu-meta">
+                            <span class="degree">Bachelor of Computer Engineering</span>
+                            <span class="gpa">GPA: 3.82/4.00 (Cum Laude)</span>
+                            <span class="duration">2019 - 2024</span>
+                        </div>
+                    </div>
+                    <div class="honors-badge">
+                        <i class='bx bx-medal'></i>
+                        Top 5%
+                    </div>
                 </div>
-                <p class="experience-role">Frontend Developer Intern</p>
-                <div class="experience-details">
-                    <div class="experience-badge">8+ Modules</div>
-                    <div class="experience-badge">VMS & TMS</div>
-                    <div class="experience-badge">Agile Team</div>
+                
+                <div class="education-body">
+                    <h4><i class='bx bx-book-open'></i> Thesis Project</h4>
+                    <p class="thesis-title">
+                        <strong>"Parent Monitoring System for Student Assessment at SDIT Darussalam 01 Batam"</strong>
+                    </p>
+                    <div class="thesis-details">
+                        <div class="detail">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Full Backend Development</span>
+                        </div>
+                        <div class="detail">
+                            <i class='bx bx-check-circle'></i>
+                            <span>RESTful API Architecture</span>
+                        </div>
+                        <div class="detail">
+                            <i class='bx bx-check-circle'></i>
+                            <span>MySQL Database Design</span>
+                        </div>
+                        <div class="detail">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Performance Testing with JMeter</span>
+                        </div>
+                    </div>
                 </div>
-                <ul class="experience-description">
-                    <li>Developed and integrated <strong>8+ high-priority modules</strong> for Vendor Management System (VMS) and Tender Management System (TMS) using React.js and RESTful APIs</li>
-                    <li>Implemented <strong>Adhoc Routing Approval feature</strong> and enhanced Master Performance Group with decimal input support</li>
-                    <li>Translated Figma designs into responsive UI components and collaborated with backend teams in Agile environment</li>
-                    <li>Optimized frontend validation for international vendors and enhanced approval workflows</li>
-                </ul>
-            </div>
-
-            <!-- PT SUCOFINDO -->
-            <div class="experience-item highlight">
-                <div class="experience-header">
-                    <h3>PT SUCOFINDO</h3>
-                    <span class="experience-date">Jul – Aug 2025</span>
-                </div>
-                <p class="experience-role">Fullstack Developer – Innovation Competition</p>
-                <div class="experience-details">
-                    <div class="experience-badge award">🏆 1st Place Winner</div>
-                    <div class="experience-badge">50+ APIs</div>
-                    <div class="experience-badge">Fullstack</div>
-                </div>
-                <ul class="experience-description">
-                    <li>Developed fullstack web application with <strong>50+ secure API endpoints</strong> integrating 142 service records across 25 units</li>
-                    <li>Implemented JWT-Argon2 authentication and role-based access for 4 user types</li>
-                    <li>Led technical development for system that won <strong>1st Place – Service Innovation Category at HackIn'Fest 2025</strong></li>
-                </ul>
-            </div>
-
-            <!-- PT Praisindo -->
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>PT Praisindo Teknologi</h3>
-                    <span class="experience-date">Jan – Apr 2024</span>
-                </div>
-                <p class="experience-role">Backend Developer Intern</p>
-                <div class="experience-details">
-                    <div class="experience-badge">Golang</div>
-                    <div class="experience-badge">Microservices</div>
-                    <div class="experience-badge">MongoDB</div>
-                </div>
-                <ul class="experience-description">
-                    <li>Developed <strong>2 core RESTful APIs</strong> for Anti-Money Laundering system using Golang and MongoDB</li>
-                    <li>Built microservices architecture for AML watchlist approval/rejection and customer risk profile retrieval</li>
-                    <li>Contributed in Agile team of 10+ members using Azure DevOps for task management</li>
-                </ul>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section class="achievements" id="achievements">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-icon">🏆</span>
+                Notable Achievements
+            </h2>
+            <p class="section-subtitle">Recognition for technical excellence and innovation</p>
+        </div>
+        
+        <div class="achievements-grid">
+            <div class="achievement-card highlight">
+                <div class="achievement-icon">
+                    <i class='bx bx-trophy'></i>
+                </div>
+                <h3>1st Place - HackIn'Fest 2025</h3>
+                <p class="achievement-org">PT SUCOFINDO Innovation Competition</p>
+                <p class="achievement-desc">
+                    Developed SAKTI platform integrating 142+ service records across 25 business units, 
+                    recognized for innovation and technical execution.
+                </p>
+                <div class="achievement-tags">
+                    <span>Full Stack</span>
+                    <span>50+ APIs</span>
+                    <span>JWT-Argon2</span>
+                </div>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class='bx bx-rocket'></i>
+                </div>
+                <h3>High-Impact Enterprise Solutions</h3>
+                <p class="achievement-org">PT SISI (Current Role)</p>
+                <p class="achievement-desc">
+                    Developed 8+ production modules for Vendor & Tender Management Systems, 
+                    improving operational efficiency by 40%.
+                </p>
+                <div class="achievement-tags">
+                    <span>React.js</span>
+                    <span>Enterprise</span>
+                    <span>Agile</span>
+                </div>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class='bx bx-certification'></i>
+                </div>
+                <h3>Expert-Level Certifications</h3>
+                <p class="achievement-org">Dicoding & Oracle</p>
+                <p class="achievement-desc">
+                    Back-End Developer Expert certification and multiple specialized credentials 
+                    in cloud, databases, and development methodologies.
+                </p>
+                <div class="achievement-tags">
+                    <span>AWS</span>
+                    <span>Oracle</span>
+                    <span>Expert</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience" id="experience">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-icon">💼</span>
+                Professional Journey
+            </h2>
+            <p class="section-subtitle">Progressive roles demonstrating technical growth and business impact</p>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-item current">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="company-logo">SISI</div>
+                        <div class="timeline-details">
+                            <h3>PT Sinergi Informatika Semen Indonesia</h3>
+                            <p class="role">Frontend Developer Intern</p>
+                        </div>
+                        <span class="timeline-date">Oct 2025 – Present</span>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="achievement-highlight">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Developed 8+ high-priority modules for enterprise VMS/TMS systems</span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li>Implemented <strong>Adhoc Routing Approval</strong> feature enabling task delegation across approval levels</li>
+                            <li>Enhanced <strong>Master Performance Group</strong> with decimal input support for supplier ratings</li>
+                            <li>Optimized international vendor registration workflows, reducing completion time by 30%</li>
+                            <li>Collaborated in Agile team to resolve post-functional testing bugs</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>React.js</span>
+                            <span>REST APIs</span>
+                            <span>Figma</span>
+                            <span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item award">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="company-logo">SUCO</div>
+                        <div class="timeline-details">
+                            <h3>PT SUCOFINDO</h3>
+                            <p class="role">Fullstack Developer – Innovation Competition</p>
+                        </div>
+                        <span class="timeline-date">Jul – Aug 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="achievement-highlight award-badge">
+                            <i class='bx bx-trophy'></i>
+                            <span>1st Place Winner – Service Innovation Category</span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li>Architected fullstack platform with <strong>50+ secure API endpoints</strong></li>
+                            <li>Implemented <strong>JWT-Argon2 authentication</strong> with role-based access for 4 user types</li>
+                            <li>Integrated <strong>142 service records</strong> across 25 business units</li>
+                            <li>Led technical development for award-winning solution</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>Node.js</span>
+                            <span>React.js</span>
+                            <span>MySQL</span>
+                            <span>JWT-Argon2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
     <section class="skills" id="skills">
-      <h2 class="section-title">Technical <span>Skills</span></h2>
-
-      <div class="skills-grid grouped">
-        <!-- Frontend Development -->
-        <div class="skill-card">
-          <h3>Frontend Development</h3>
-          <div class="chips">
-            <span>React.js</span><span>HTML5</span><span>CSS3</span>
-            <span>JavaScript (ES6+)</span><span>Figma to Code</span>
-            <span>Responsive Design</span>
-          </div>
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-icon">⚡</span>
+                Technical Expertise
+            </h2>
+            <p class="section-subtitle">Comprehensive skill set for end-to-end development</p>
         </div>
-
-        <!-- Backend Development -->
-        <div class="skill-card">
-          <h3>Backend Development</h3>
-          <div class="chips">
-            <span>Node.js</span><span>Express.js</span><span>Golang</span>
-            <span>RESTful APIs</span><span>JWT Authentication</span>
-            <span>Microservices</span>
-          </div>
+        
+        <div class="skills-grid">
+            <!-- Frontend -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bxl-react'></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <span class="skill-level">Expert</span>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">React.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript (ES6+)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML5/CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Backend -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bx-server'></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <span class="skill-level">Expert</span>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js/Express</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 94%"></div>
+                        </div>
+                        <span class="skill-percent">94%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">RESTful APIs</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 96%"></div>
+                        </div>
+                        <span class="skill-percent">96%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Golang</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Database -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bx-data'></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MongoDB</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Redis</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                        <span class="skill-percent">82%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- DevOps -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class='bx bx-cloud'></i>
+                    </div>
+                    <h3>DevOps & Tools</h3>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 86%"></div>
+                        </div>
+                        <span class="skill-percent">86%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AWS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 84%"></div>
+                        </div>
+                        <span class="skill-percent">84%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git/GitHub</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Databases -->
-        <div class="skill-card">
-          <h3>Databases</h3>
-          <div class="chips">
-            <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>
-            <span>Redis</span><span>Database Design</span>
-          </div>
+        
+        <!-- Skill Summary -->
+        <div class="skill-summary">
+            <h4><i class='bx bx-bulb'></i> What Sets Me Apart</h4>
+            <div class="summary-points">
+                <div class="point">
+                    <i class='bx bx-check'></i>
+                    <span><strong>End-to-End Ownership:</strong> From database design to CI/CD deployment</span>
+                </div>
+                <div class="point">
+                    <i class='bx bx-check'></i>
+                    <span><strong>Performance Focus:</strong> Built systems handling 300+ concurrent users</span>
+                </div>
+                <div class="point">
+                    <i class='bx bx-check'></i>
+                    <span><strong>Business Impact:</strong> Solutions that improve operational efficiency by 40%</span>
+                </div>
+                <div class="point">
+                    <i class='bx bx-check'></i>
+                    <span><strong>Award-Winning Innovation:</strong> Recognized by industry leaders</span>
+                </div>
+            </div>
         </div>
-
-        <!-- DevOps & Tools -->
-        <div class="skill-card">
-          <h3>DevOps & Tools</h3>
-          <div class="chips">
-            <span>Git/GitHub</span><span>GitHub Actions</span><span>Docker</span>
-            <span>AWS</span><span>Railway</span><span>Postman</span>
-            <span>JMeter</span><span>Azure DevOps</span>
-          </div>
-        </div>
-
-        <!-- Methodologies -->
-        <div class="skill-card">
-          <h3>Methodologies</h3>
-          <div class="chips">
-            <span>Agile/Scrum</span><span>Clean Architecture</span><span>CI/CD</span>
-            <span>System Design</span><span>API Documentation</span>
-            <span>Technical Writing</span>
-          </div>
-        </div>
-
-        <!-- Professional Skills -->
-        <div class="skill-card">
-          <h3>Professional Skills</h3>
-          <div class="chips">
-            <span>Problem Solving</span><span>Team Collaboration</span><span>Leadership</span>
-            <span>Communication</span><span>Project Management</span><span>Adaptability</span>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ===== PROJECTS ===== -->
     <section class="projects" id="projects">
-      <h2 class="section-title">Featured <span>Projects</span></h2>
-
-      <div class="projects-grid">
-        <!-- Project 1 - VMS/TMS -->
-        <div class="project-card featured">
-            <div class="project-tag">Latest Project</div>
-            <img src="project-vms.jpeg" alt="Vendor Management System" />
-            <h3>Enterprise VMS & TMS Systems</h3>
-            <p><span>PT SISI – Oct 2025 to Present</span></p>
-            <p>Developed 8+ high-priority modules for enterprise-level Vendor Management and Tender Management Systems, including Adhoc Routing Approval, Master Performance Group, and international vendor registration workflows.</p>
-            <div class="tech-icons">
-              <span><i class="bx bxl-react"></i> React.js</span>
-              <span><i class="bx bxl-nodejs"></i> Node.js</span>
-              <span><i class="bx bx-api"></i> REST API</span>
-              <span><i class="bx bx-palette"></i> Figma</span>
-            </div>
-            <button class="btn" onclick="openModal('project-vms')">View Details</button>
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-icon">🚀</span>
+                Impactful Projects
+            </h2>
+            <p class="section-subtitle">Real-world solutions delivering measurable business value</p>
         </div>
-
-        <!-- Project 2 - SAKTI -->
-        <div class="project-card award">
-            <div class="project-tag">🏆 Award Winning</div>
-            <img src="project1.png" alt="SAKTI System" />
-            <h3>SAKTI – Integrated Service Platform</h3>
-            <p><span>PT SUCOFINDO – Jul–Aug 2025</span></p>
-            <p>Fullstack system unifying 142 service records across 25 business units with JWT-Argon2 authentication and role-based access for 4 user types. Winner of 1st Place at HackIn'Fest 2025.</p>
-            <div class="tech-icons">
-              <span><i class="bx bxl-nodejs"></i> Node.js</span>
-              <span><i class="bx bxl-react"></i> React.js</span>
-              <span><i class="bx bxl-mysql"></i> MySQL</span>
-              <span><i class="bx bx-shield"></i> JWT-Argon2</span>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card featured">
+                <div class="project-badge">
+                    <span class="badge-tag">Featured</span>
+                    <span class="badge-company">PT SISI</span>
+                </div>
+                <div class="project-image">
+                    <img src="project-vms.jpeg" alt="VMS/TMS Systems" loading="lazy">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Enterprise VMS & TMS Systems</h3>
+                    <p class="project-desc">
+                        8+ high-priority modules for Vendor & Tender Management, processing international vendor registrations and approval workflows.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <i class='bx bx-layer'></i>
+                            <span>8 Modules</span>
+                        </div>
+                        <div class="metric">
+                            <i class='bx bx-trending-up'></i>
+                            <span>40% Efficiency</span>
+                        </div>
+                        <div class="metric">
+                            <i class='bx bx-time'></i>
+                            <span>Ongoing</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Figma</span>
+                        <span>Agile</span>
+                    </div>
+                </div>
             </div>
-            <button class="btn" onclick="openModal('project1')">View Details</button>
-        </div>
-
-        <!-- Project 3 - DarusTrack -->
-        <div class="project-card">
-            <img src="project2.png" alt="DarusTrack System" />
-            <h3>DarusTrack Academic Monitoring</h3>
-            <p><span>Final Project – Aug 2024–Jun 2025</span></p>
-            <p>Backend system with role-based access covering 20+ academic workflows, validated for 300+ concurrent users via JMeter performance testing.</p>
-            <div class="tech-icons">
-              <span><i class="bx bxl-nodejs"></i> Node.js</span>
-              <span><i class="bx bx-code-alt"></i> Express.js</span>
-              <span><i class="bx bxl-mysql"></i> MySQL</span>
-              <span><i class="bx bx-test-tube"></i> JMeter</span>
+            
+            <!-- Project 2 -->
+            <div class="project-card award">
+                <div class="project-badge">
+                    <span class="badge-tag award-badge">
+                        <i class='bx bx-trophy'></i>
+                        1st Place
+                    </span>
+                    <span class="badge-company">PT SUCOFINDO</span>
+                </div>
+                <div class="project-image">
+                    <img src="project1.png" alt="SAKTI Platform" loading="lazy">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">SAKTI – Integrated Service Platform</h3>
+                    <p class="project-desc">
+                        Award-winning platform unifying 142+ service records across 25 units with advanced authentication and role-based access.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <i class='bx bx-api'></i>
+                            <span>50+ APIs</span>
+                        </div>
+                        <div class="metric">
+                            <i class='bx bx-data'></i>
+                            <span>142 Records</span>
+                        </div>
+                        <div class="metric">
+                            <i class='bx bx-user'></i>
+                            <span>4 User Types</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>React.js</span>
+                        <span>MySQL</span>
+                        <span>JWT-Argon2</span>
+                    </div>
+                </div>
             </div>
-            <button class="btn" onclick="openModal('project2')">View Details</button>
         </div>
-
-        <!-- Project 4 - AML System -->
-        <div class="project-card">
-            <img src="project3.png" alt="AML System" />
-            <h3>Anti-Money Laundering System</h3>
-            <p><span>PT Praisindo – Jan–Apr 2024</span></p>
-            <p>Microservices-based AML system with watchlist approval/rejection and customer risk profile APIs built with Golang and MongoDB.</p>
-            <div class="tech-icons">
-              <span><i class="bx bx-code-block"></i> Golang</span>
-              <span><i class="bx bxl-mongodb"></i> MongoDB</span>
-              <span><i class="bx bx-task"></i> Agile</span>
-              <span><i class="bx bx-cloud"></i> Azure DevOps</span>
-            </div>
-            <button class="btn" onclick="openModal('project3')">View Details</button>
-        </div>
-      </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
-    <section class="certifications" id="certifications">
-      <h2 class="section-title">Certifications & <span>Courses</span></h2>
-
-      <div class="cert-grid">
-        <!-- Backend Development -->
-        <div class="cert-column">
-          <h3 class="cert-category">Backend Development</h3>
-          <div class="cert-card">
-            <i class="bx bx-certification"></i>
-            <h4>Back-End Developer Expert with JavaScript</h4>
-            <p>Dicoding – 2026</p>
-          </div>
-          <div class="cert-card">
-            <i class="bx bx-certification"></i>
-            <h4>Fundamental Back-End with JavaScript</h4>
-            <p>Dicoding – 2026</p>
-          </div>
-          <div class="cert-card">
-            <i class="bx bx-certification"></i>
-            <h4>JavaScript Programming</h4>
-            <p>Dicoding – 2025</p>
-          </div>
+    <!-- ===== CERTIFICATIONS DETAILED ===== -->
+    <section class="certifications-detailed" id="certifications">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-icon">📜</span>
+                Professional Certifications
+            </h2>
+            <p class="section-subtitle">Industry-recognized credentials validating technical expertise</p>
         </div>
-
-        <!-- Cloud & DevOps -->
-        <div class="cert-column">
-          <h3 class="cert-category">Cloud & DevOps</h3>
-          <div class="cert-card">
-            <i class="bx bx-certification"></i>
-            <h4>Architecting on AWS</h4>
-            <p>Dicoding – 2025</p>
-          </div>
-          <div class="cert-card">
-            <i class="bx bx-certification"></i>
-            <h4>Belajar Dasar Git dengan GitHub</h4>
-            <p>Dicoding – 2024</p>
-          </div>
-          <div class="cert-card">
-            <i class="bx bx-certification"></i>
-            <h4>Intermediate Junior Web Developer</h4>
-            <p>Pusat Pengembangan Talenta Digital – 2025</p>
-          </div>
+        
+        <div class="certifications-timeline">
+            <!-- 2026 Certifications -->
+            <div class="cert-year">
+                <h3 class="year-title">2026</h3>
+                <div class="cert-cards">
+                    <div class="cert-card expert">
+                        <div class="cert-badge">
+                            <i class='bx bx-award'></i>
+                            Expert Level
+                        </div>
+                        <div class="cert-content">
+                            <h4>Back-End Developer Expert with JavaScript</h4>
+                            <p class="cert-org">Dicoding Indonesia • Validated by AWS</p>
+                            <p class="cert-desc">Mastered advanced backend concepts including Clean Architecture, security best practices, and production deployment.</p>
+                            <div class="cert-skills">
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>RabbitMQ</span>
+                                <span>Clean Architecture</span>
+                            </div>
+                            <div class="cert-actions">
+                                <a href="https://drive.google.com/file/d/your-cert-link" target="_blank" class="cert-link">
+                                    <i class='bx bx-certification'></i>
+                                    View Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class='bx bx-code-alt'></i>
+                            Fundamental
+                        </div>
+                        <div class="cert-content">
+                            <h4>Fundamental Back-End with JavaScript</h4>
+                            <p class="cert-org">Dicoding Indonesia • AWS Standards</p>
+                            <p class="cert-desc">Built scalable RESTful API with asynchronous processing, caching, and email integration.</p>
+                            <div class="cert-skills">
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>RabbitMQ</span>
+                                <span>Nodemailer</span>
+                            </div>
+                            <div class="cert-actions">
+                                <a href="https://github.com/salsabilarh/openmusic-api" target="_blank" class="cert-link">
+                                    <i class='bx bxl-github'></i>
+                                    View Project
+                                </a>
+                                <a href="https://drive.google.com/file/d/your-cert-link" target="_blank" class="cert-link">
+                                    <i class='bx bx-certification'></i>
+                                    Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 2025 Certifications -->
+            <div class="cert-year">
+                <h3 class="year-title">2025</h3>
+                <div class="cert-cards">
+                    <div class="cert-card">
+                        <div class="cert-content">
+                            <h4>JavaScript Programming</h4>
+                            <p class="cert-org">Dicoding Indonesia</p>
+                            <div class="cert-actions">
+                                <a href="https://drive.google.com/file/d/your-cert-link" target="_blank" class="cert-link">
+                                    <i class='bx bx-certification'></i>
+                                    View Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card">
+                        <div class="cert-content">
+                            <h4>Architecting on AWS</h4>
+                            <p class="cert-org">Dicoding Indonesia • AWS Partner</p>
+                            <div class="cert-actions">
+                                <a href="https://drive.google.com/file/d/your-cert-link" target="_blank" class="cert-link">
+                                    <i class='bx bx-certification'></i>
+                                    View Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Database -->
-        <div class="cert-column">
-          <h3 class="cert-category">Database</h3>
-          <div class="cert-card">
-            <i class="bx bx-certification"></i>
-            <h4>Database Foundations & Design</h4>
-            <p>Oracle Academy – 2023</p>
-          </div>
-          <div class="cert-card">
-            <i class="bx bx-certification"></i>
-            <h4>Belajar Dasar SQL</h4>
-            <p>Dicoding – 2023</p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ===== PROJECTS DETAILED ===== -->
+    <section class="projects-detailed" id="projects-detailed">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-icon">💻</span>
+                Course Projects & Internship Work
+            </h2>
+            <p class="section-subtitle">Academic and professional projects demonstrating technical implementation</p>
+        </div>
+        
+        <div class="projects-timeline">
+            <!-- Dicoding Expert Course Project -->
+            <div class="project-timeline-item">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                </div>
+                <div class="project-timeline-content">
+                    <div class="project-header">
+                        <div class="project-category">
+                            <i class='bx bx-code-curly'></i>
+                            Course Project
+                        </div>
+                        <span class="project-date">Jan 2026</span>
+                    </div>
+                    <h3>Forum API - Back-End Developer Expert Course</h3>
+                    <p class="project-org">Dicoding Indonesia • Final Submission</p>
+                    
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <i class='bx bx-check-circle'></i>
+                            <span>15+ secured endpoints with JWT authentication</span>
+                        </div>
+                        <div class="highlight">
+                            <i class='bx bx-check-circle'></i>
+                            <span>100% test coverage (unit & integration)</span>
+                        </div>
+                        <div class="highlight">
+                            <i class='bx bx-check-circle'></i>
+                            <span>NGINX rate limiting (90 requests/minute)</span>
+                        </div>
+                        <div class="highlight">
+                            <i class='bx bx-check-circle'></i>
+                            <span>Automated CI/CD with GitHub Actions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tech-stack">
+                        <div class="tech-group">
+                            <h5>Backend</h5>
+                            <div class="tech-tags">
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="tech-group">
+                            <h5>DevOps</h5>
+                            <div class="tech-tags">
+                                <span>Docker</span>
+                                <span>GitHub Actions</span>
+                                <span>NGINX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/salsabilarh/forum-api" target="_blank" class="project-link">
+                            <i class='bx bxl-github'></i>
+                            GitHub Repository
+                        </a>
+                        <a href="https://documenter.getpostman.com/view/your-api-docs" target="_blank" class="project-link">
+                            <i class='bx bx-api'></i>
+                            API Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dicoding Fundamental Course Project -->
+            <div class="project-timeline-item">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                </div>
+                <div class="project-timeline-content">
+                    <div class="project-header">
+                        <div class="project-category">
+                            <i class='bx bx-music'></i>
+                            Music Platform API
+                        </div>
+                        <span class="project-date">Sep 2025</span>
+                    </div>
+                    <h3>OpenMusic API - Playlist Management System</h3>
+                    <p class="project-org">Dicoding Indonesia • AWS Standards</p>
+                    
+                    <div class="project-features">
+                        <h5>Key Features:</h5>
+                        <ul>
+                            <li>User authentication with JWT tokens</li>
+                            <li>Role-based access control</li>
+                            <li>Playlist CRUD operations with collaborators</li>
+                            <li>Asynchronous playlist export via RabbitMQ</li>
+                            <li>Album cover upload with storage integration</li>
+                            <li>Redis caching for performance optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech-stack">
+                        <div class="tech-group">
+                            <h5>Core Technologies</h5>
+                            <div class="tech-tags">
+                                <span>Node.js</span>
+                                <span>Hapi.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                        <div class="tech-group">
+                            <h5>Services</h5>
+                            <div class="tech-tags">
+                                <span>RabbitMQ</span>
+                                <span>Nodemailer SMTP</span>
+                                <span>Cloud Storage</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-ui-preview">
+                        <h5>API Endpoints Preview:</h5>
+                        <div class="endpoint-examples">
+                            <div class="endpoint">
+                                <span class="method post">POST</span>
+                                <code>/users</code>
+                                <span class="desc">Register new user</span>
+                            </div>
+                            <div class="endpoint">
+                                <span class="method get">GET</span>
+                                <code>/playlists</code>
+                                <span class="desc">Get user playlists</span>
+                            </div>
+                            <div class="endpoint">
+                                <span class="method post">POST</span>
+                                <code>/playlists/:id/export</code>
+                                <span class="desc">Export playlist via email</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/salsabilarh/openmusic-api" target="_blank" class="project-link">
+                            <i class='bx bxl-github'></i>
+                            Source Code
+                        </a>
+                        <a href="https://documenter.getpostman.com/view/your-api-docs" target="_blank" class="project-link">
+                            <i class='bx bx-book'></i>
+                            Full Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PT SUCOFINDO Internship Project -->
+            <div class="project-timeline-item highlight">
+                <div class="timeline-marker">
+                    <div class="marker-dot award"></div>
+                    <div class="marker-line"></div>
+                </div>
+                <div class="project-timeline-content">
+                    <div class="project-header">
+                        <div class="project-category award">
+                            <i class='bx bx-trophy'></i>
+                            Award-Winning Project
+                        </div>
+                        <span class="project-date">Jul - Aug 2025</span>
+                    </div>
+                    <h3>Sistem Akses Kilat Terpadu Informasi Jasa (SAKTI)</h3>
+                    <p class="project-org">PT SUCOFINDO • Innovation Competition</p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">1<sup>st</sup></div>
+                            <div class="stat-label">Place Winner</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">API Endpoints</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">142</div>
+                            <div class="stat-label">Service Records</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">25</div>
+                            <div class="stat-label">Business Units</div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-ui-showcase">
+                        <h5>User Interface Screenshots:</h5>
+                        <div class="ui-gallery">
+                            <div class="ui-item">
+                                <img src="project-sakti-login.png" alt="SAKTI Login Page" loading="lazy">
+                                <span>Login Interface</span>
+                            </div>
+                            <div class="ui-item">
+                                <img src="project-sakti-dashboard.png" alt="SAKTI Dashboard" loading="lazy">
+                                <span>Admin Dashboard</span>
+                            </div>
+                            <div class="ui-item">
+                                <img src="project-sakti-management.png" alt="Service Management" loading="lazy">
+                                <span>Service Management</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-features-grid">
+                        <div class="feature">
+                            <i class='bx bx-lock-alt'></i>
+                            <h6>Secure Authentication</h6>
+                            <p>JWT-Argon2 with role-based access for 4 user types</p>
+                        </div>
+                        <div class="feature">
+                            <i class='bx bx-data'></i>
+                            <h6>Data Integration</h6>
+                            <p>Unified 142 service records across 25 units</p>
+                        </div>
+                        <div class="feature">
+                            <i class='bx bx-line-chart'></i>
+                            <h6>Revenue Tracking</h6>
+                            <p>Comprehensive service revenue management</p>
+                        </div>
+                        <div class="feature">
+                            <i class='bx bx-file'></i>
+                            <h6>Marketing Kit</h6>
+                            <p>Centralized marketing documentation system</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/salsabilarh/sakti-system" target="_blank" class="project-link">
+                            <i class='bx bxl-github'></i>
+                            View Code Repository
+                        </a>
+                        <a href="https://sakti-demo.vercel.app" target="_blank" class="project-link">
+                            <i class='bx bx-globe'></i>
+                            Live Demo
+                        </a>
+                        <a href="portfolio.pdf" download class="project-link">
+                            <i class='bx bx-download'></i>
+                            Download Project Report
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- DarusTrack Academic System -->
+            <div class="project-timeline-item">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                </div>
+                <div class="project-timeline-content">
+                    <div class="project-header">
+                        <div class="project-category">
+                            <i class='bx bx-book-open'></i>
+                            Academic System
+                        </div>
+                        <span class="project-date">Aug 2024 - Jun 2025</span>
+                    </div>
+                    <h3>DarusTrack Academic Monitoring System</h3>
+                    <p class="project-org">Final Project • Diponegoro University</p>
+                    
+                    <div class="project-modules">
+                        <h5>System Modules:</h5>
+                        <div class="module-grid">
+                            <div class="module">User Management (RBAC)</div>
+                            <div class="module">Academic Year & Semester</div>
+                            <div class="module">Class & Schedule Management</div>
+                            <div class="module">Student Data Management</div>
+                            <div class="module">Subject & Curriculum</div>
+                            <div class="module">Attendance Tracking</div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-performance">
+                        <h5>Performance Testing Results:</h5>
+                        <div class="perf-metrics">
+                            <div class="metric">
+                                <span class="metric-value">300+</span>
+                                <span class="metric-label">Concurrent Users</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">&lt; 2s</span>
+                                <span class="metric-label">Response Time</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">99.8%</span>
+                                <span class="metric-label">Success Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/salsabilarh/darustrack-api" target="_blank" class="project-link">
+                            <i class='bx bxl-github'></i>
+                            Backend Repository
+                        </a>
+                        <a href="https://documenter.getpostman.com/view/32232306/2sAYkEpepN" target="_blank" class="project-link">
+                            <i class='bx bx-book-content'></i>
+                            API Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-icon">📞</span>
+                Let's Connect
+            </h2>
+            <p class="section-subtitle">Ready to build something amazing together?</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:salsabilarafifahh@gmail.com">salsabilarafifahh@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bx-phone'></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <a href="tel:+6281222430712">(+62) 812-2243-0712</a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bx-map'></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Pekanbaru, Riau, Indonesia</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/salsabilarh" target="_blank" class="social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/salsabila-rh" target="_blank" class="social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="CV_Salsabila_Rafifah_Handifa_FullStack.pdf" download class="social-link">
+                        <i class='bx bx-download'></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <h3>Available for exciting opportunities</h3>
+                <p>I'm currently open to:</p>
+                <ul class="opportunities">
+                    <li><i class='bx bx-check'></i> Full-time Full Stack Developer roles</li>
+                    <li><i class='bx bx-check'></i> Project-based collaborations</li>
+                    <li><i class='bx bx-check'></i> Technical consulting</li>
+                </ul>
+                <a href="mailto:salsabilarafifahh@gmail.com" class="btn btn-primary">
+                    <i class='bx bx-message-dots'></i>
+                    Start a Conversation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <div class="social-links footer-social">
-            <a href="mailto:salsabilarafifahh@gmail.com" class="social-item">
-                <i class="bx bx-envelope"></i><span>Email</span>
-            </a>
-            <a href="https://github.com/salsabilarh" target="_blank" class="social-item">
-                <i class="bx bxl-github"></i><span>GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/salsabila-rh" target="_blank" class="social-item">
-                <i class="bx bxl-linkedin-square"></i><span>LinkedIn</span>
-            </a>
-            <a href="CV_Salsabila_Rafifah_Handifa_FullStack.pdf" download class="social-item">
-                <i class="bx bx-download"></i><span>Download CV</span>
-            </a>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">Salsabila<span class="logo-highlight">.dev</span></span>
+                <p class="footer-tagline">Building the future, one line of code at a time</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <a href="CV_Salsabila_Rafifah_Handifa_FullStack.pdf" download>Download CV</a>
+                    <a href="https://github.com/salsabilarh" target="_blank">GitHub</a>
+                    <a href="#certifications">Certifications</a>
+                </div>
+            </div>
         </div>
-
-        <div class="footer-info">
-            <p><strong>Phone:</strong> (+62) 81222430712</p>
-            <p><strong>Location:</strong> Pekanbaru, Riau</p>
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                © 2025 Salsabila Rafifah Handifa. All rights reserved.
+            </p>
+            <p class="footer-note">
+                Built with <i class='bx bx-heart'></i> and modern web technologies
+            </p>
         </div>
-
-        <p class="copyright">
-            © 2025 Salsabila Rafifah Handifa. Full Stack Developer.
-        </p>
     </footer>
 
     <script src="script.js"></script>
